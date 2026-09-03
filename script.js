@@ -21,3 +21,44 @@ if (themeToggle) {
     });
 
 }
+// Back to Top Button
+const backToTop = document.getElementById("back-to-top");
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+        backToTop.classList.add("show");
+    } else {
+        backToTop.classList.remove("show");
+    }
+
+});
+
+backToTop.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
+// Scroll Animation
+const revealElements = document.querySelectorAll(".reveal");
+
+const observer = new IntersectionObserver((entries) => {
+
+    entries.forEach((entry) => {
+
+        if (entry.isIntersecting) {
+            entry.target.classList.add("active");
+        }
+
+    });
+
+}, {
+    threshold: 0.15
+});
+
+revealElements.forEach((element) => {
+    observer.observe(element);
+});
