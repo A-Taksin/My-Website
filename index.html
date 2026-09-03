@@ -1,58 +1,462 @@
-<!-- About Me Section -->
-<section id="about" class="about-section">
+<!DOCTYPE html>
+<html lang="en">
 
-    <div class="about-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <div class="about-content">
+    <title>Taksin Ahmed | Portfolio</title>
 
-            <h2>About Me</h2>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-            <p>
-                I am <strong>Taksin Ahmed</strong>, the son of Mr. Afaz Miah
-                and Mrs. Helena Begum. I come from Sunamganj District in the
-                Sylhet Division of Bangladesh. Born in 2004 in a small village
-                in Chhatak Upazila, I am currently pursuing my studies in
-                Computer Science and Engineering (CSE) at Sylhet International University.
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <a href="#home" class="logo">
+                Taksin<span>.</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </div>
+
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
+
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero reveal" id="home">
+
+        <div class="hero-content">
+
+            <p class="welcome">WELCOME TO MY PORTFOLIO</p>
+
+            <h1>
+                Hi, I'm <span>Taksin Ahmed</span>
+            </h1>
+
+            <h2>Computer Science & Engineering Student</h2>
+
+            <p class="hero-text">
+                I am passionate about programming, web development,
+                technology, and learning new things. I am currently
+                building my skills and creating projects step by step.
             </p>
 
-            <p>
-                I have a strong interest in <strong>technology, programming,
-                and web development</strong>. Beyond academics, I enjoy
-                travelling to new places, discovering new experiences, and
-                expressing myself through singing.
-            </p>
+            <div class="hero-buttons">
+                <a href="#about" class="btn primary-btn">About Me</a>
+                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            </div>
 
-            <p>
-                I believe in continuous learning and personal growth, and I am
-                always eager to develop new skills and explore new opportunities.
-            </p>
+        </div>
 
-            <div class="about-info">
-            <link rel="stylesheet" href="style.css">
-                <div>
-                    <span>📍</span>
-                    <strong>From:</strong> Sunamganj, Bangladesh
-                </div>
 
-                <div>
-                    <span>🎓</span>
-                    <strong>Study:</strong> Computer Science & Engineering
-                </div>
+        <div class="hero-image">
 
-                <div>
-                    <span>💻</span>
-                    <strong>Interest:</strong> Programming & Web Development
-                </div>
+            <div class="image-circle">
+                <img src="profile.jpeg" alt="Taksin Ahmed">
+            </div>
 
-                <div>
-                    <span>🎵</span>
-                    <strong>Hobby:</strong> Travelling & Singing
+        </div>
+
+    </section>
+
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section reveal">
+
+        <div class="about-container">
+
+            <div class="about-content">
+
+                <h2>About Me</h2>
+
+                <p>
+                    I am <strong>Taksin Ahmed</strong>, the son of Mr. Afaz Miah
+                    and Mrs. Helena Begum. I come from Sunamganj District in the
+                    Sylhet Division of Bangladesh. Born in 2004 in a small village
+                    in Chhatak Upazila, I am currently pursuing my studies in
+                    Computer Science and Engineering (CSE) at Sylhet International University.
+                </p>
+
+                <button onclick="sayHello()">Say Hello 👋</button>
+
+                <p>
+                    I have a strong interest in <strong>technology, programming,
+                    and web development</strong>. Beyond academics, I enjoy
+                    travelling to new places, discovering new experiences, and
+                    expressing myself through singing.
+                </p>
+
+                <p>
+                    I believe in continuous learning and personal growth, and I am
+                    always eager to develop new skills and explore new opportunities.
+                </p>
+
+
+                <div class="about-info">
+
+                    <div>
+                        <span>📍</span>
+                        <strong>From:</strong> Sunamganj, Bangladesh
+                    </div>
+
+                    <div>
+                        <span>🎓</span>
+                        <strong>Study:</strong> Computer Science & Engineering
+                    </div>
+
+                    <div>
+                        <span>💻</span>
+                        <strong>Interest:</strong> Programming & Web Development
+                    </div>
+
+                    <div>
+                        <span>🎵</span>
+                        <strong>Hobby:</strong> Travelling & Singing
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+
+    <!-- Skills Section -->
+    <section class="skills reveal" id="skills">
+
+        <div class="section-title">
+            <p>MY EXPERTISE</p>
+            <h2>My Skills</h2>
+        </div>
+
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <div class="skill-icon">C</div>
+                <h3>C Programming</h3>
+                <p>
+                    Learning programming fundamentals, logic and problem solving.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">C++</div>
+                <h3>C++</h3>
+                <p>
+                    Learning object-oriented programming and software development.
+                </p>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">&lt;/&gt;</div>
+                <h3>HTML</h3>
+                <p>
+                    Building structured and responsive web pages.
+                </p>
+                <span class="skill-level">Intermediate</span>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">CSS</div>
+                <h3>CSS</h3>
+                <p>
+                    Creating modern layouts, designs and responsive interfaces.
+                </p>
+                <span class="skill-level">Beginner</span>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">🎨</div>
+                <h3>Graphic Design</h3>
+                <p>
+                    Creating visual designs using modern design tools.
+                </p>
+                <span class="skill-level">Basic</span>
+            </div>
+
+
+            <div class="skill-card">
+                <div class="skill-icon">📢</div>
+                <h3>Digital Marketing</h3>
+                <p>
+    Intermediate — online marketing, branding and promotion.
+</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Education Section -->
+    <section class="education reveal" id="education">
+
+        <div class="section-title">
+            <p>MY ACADEMIC JOURNEY</p>
+            <h2>Education</h2>
+        </div>
+
+
+        <div class="education-container">
+
+            <div class="education-card">
+
+                <div class="education-year">2026 - Present</div>
+
+                <h3>B.Sc. in Computer Science & Engineering</h3>
+
+                <h4>Sylhet International University</h4>
+
+                <p>
+                    Currently studying Computer Science & Engineering
+                    and developing my knowledge in programming,
+                    mathematics and computer science.
+                </p>
+
+            </div>
+
+
+            <div class="education-card">
+
+                <div class="education-year">2023</div>
+
+                <h3>Higher Secondary Certificate (HSC)</h3>
+
+                <p>
+                    Successfully completed my Higher Secondary education
+                    and continued my academic journey toward
+                    Computer Science & Engineering.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects reveal" id="projects">
+
+        <div class="section-title">
+            <p>WHAT I'M BUILDING</p>
+            <h2>My Projects</h2>
+        </div>
+
+
+        <div class="projects-container">
+
+            <div class="project-card">
+
+                <div class="project-number">01</div>
+
+                <h3>Personal Portfolio Website</h3>
+
+                <p>
+                    A personal portfolio website built using HTML
+                    and CSS to showcase my education, skills,
+                    interests and projects.
+                </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>GitHub</span>
+                </div>
+<a href="https://a-taksin.github.io/My-Website/" target="_blank" class="project-link">
+    View Live Website →
+</a>
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">02</div>
+
+                <h3>C++ Calculator</h3>
+
+                <p>
+                    A simple calculator project created while
+                    learning C++ programming, operators,
+                    input, output and basic programming logic.
+                </p>
+
+                <div class="project-tags">
+                    <span>C++</span>
+                    <span>Programming</span>
+                </div>
+
+            </div>
+
+
+            <div class="project-card">
+
+                <div class="project-number">03</div>
+
+                <h3>C Programming Practice</h3>
+
+                <p>
+                    A collection of beginner programming exercises
+                    focused on loops, conditions, patterns and
+                    problem-solving.
+                </p>
+
+                <div class="project-tags">
+                    <span>C</span>
+                    <span>Logic</span>
+                    <span>Practice</span>
+                </div>
+<span class="project-status">Learning Project</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact reveal" id="contact">
+
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Contact Me</h2>
+        </div>
+
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <h3>Let's Connect</h3>
+
+                <p>
+                    If you would like to get in touch with me,
+                    feel free to contact me through the information below.
+                </p>
+
+
+                <div class="contact-item">
+
+                    <span>📧</span>
+
+                    <div>
+                        <strong>Email</strong>
+                    <p>
+    <a href="mailto:mdabutaksin@gmail.com">mdabutaksin@gmail.com</a>
+</p>
+                    </div>
+
+                </div>
+
+
+                <div class="contact-item">
+
+                    <span>📍</span>
+
+                    <div>
+                        <strong>Location</strong>
+                        <p>Sylhet, Bangladesh</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <form class="contact-form">
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required
+                >
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required
+                >
+
+                <textarea
+                    placeholder="Your Message"
+                    rows="6"
+                    required
+                ></textarea>
+
+                <button type="submit">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>Taksin<span>.</span></h2>
+
+            <p>
+                Computer Science & Engineering Student
+            </p>
+
+
+            <div class="social-links">
+
+    <a href="#" target="_blank">GitHub</a>
+
+    <a href="#" target="_blank">LinkedIn</a>
+
+    <a href="https://www.facebook.com/a.taksin.2024" target="_blank">
+        Facebook
+    </a>
+
+    <a href="https://www.instagram.com/taksin5903/" target="_blank">
+        Instagram
+    </a>
+
+</div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>
+                © 2026 Taksin Ahmed. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top">↑</button>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
