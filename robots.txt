@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://a-taksin.github.io/My-Website/sitemap.xml
