@@ -1035,22 +1035,37 @@ body.dark-mode .contact-form textarea::placeholder {
 
     .navbar {
         padding: 15px 20px;
-
-        flex-direction: column;
-
+        flex-direction: row;
         gap: 15px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    /* Mobile Menu Button */
+    .menu-toggle {
+        display: block;
+        background: transparent;
+        border: none;
+        font-size: 28px;
+        cursor: pointer;
+        color: inherit;
     }
 
     .nav-links {
-        gap: 14px;
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px 0;
+    }
 
-        flex-wrap: wrap;
-
-        justify-content: center;
+    .nav-links.active {
+        display: flex;
     }
 
     .nav-links a {
-        font-size: 13px;
+        font-size: 14px;
     }
 
     .theme-toggle {
@@ -1058,15 +1073,12 @@ body.dark-mode .contact-form textarea::placeholder {
         height: 38px;
     }
 
+
     .hero {
         min-height: auto;
-
         flex-direction: column-reverse;
-
         text-align: center;
-
         padding: 70px 20px;
-
         gap: 40px;
     }
 
@@ -1081,13 +1093,11 @@ body.dark-mode .contact-form textarea::placeholder {
 
     .welcome {
         font-size: 11px;
-
         letter-spacing: 2px;
     }
 
     .hero h1 {
         font-size: 40px;
-
         letter-spacing: -1px;
     }
 
@@ -1101,7 +1111,6 @@ body.dark-mode .contact-form textarea::placeholder {
 
     .hero-buttons {
         justify-content: center;
-
         flex-wrap: wrap;
     }
 
@@ -1132,9 +1141,9 @@ body.dark-mode .contact-form textarea::placeholder {
 
     .contact-container {
         grid-template-columns: 1fr;
-
         gap: 45px;
     }
+
 }
 
 
